@@ -2,6 +2,7 @@
   <section class="container">
     <div>
       <logo />
+      <a-button type="primary">Primary</a-button>
       <h1 class="title">
         myWebsite
       </h1>
@@ -25,11 +26,16 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
-
 export default {
   components: {
     Logo
-  }
+  },
+  data() {
+    return {
+      current: ''
+    }
+  },
+  methods: {}
 }
 </script>
 
